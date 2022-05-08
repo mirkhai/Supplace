@@ -21,14 +21,7 @@ class LogsTableViewController: UITableViewController, NSFetchedResultsController
 
             navigationController?.navigationBar.prefersLargeTitles = true
             
-            // Customize the navigation bar
-            navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationController?.navigationBar.shadowImage = UIImage()
-            if let customFont = UIFont(name: "SpaceGrotesk-VariableFont_wght", size: 38.0) {
-                // For Xcode 9 users, NSAttributedString.Key is equal to NSAttributedStringKey
-                navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0.28, green: 0.41, blue: 0.58, alpha: 1.00), NSAttributedString.Key.font: customFont]
-            }
-            
+        
             navigationController?.hidesBarsOnSwipe = true
             // Prepare the empty view
             tableView.backgroundView = emptyStorageView
@@ -56,23 +49,28 @@ class LogsTableViewController: UITableViewController, NSFetchedResultsController
     
 }
 
-override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnSwipe = true
+    }
     
-    navigationController?.hidesBarsOnSwipe = true
-}
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
+            return
+        }
+        
+        let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+        if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
+            present(walkthroughViewController, animated: true, completion: nil)
+        }
+    }
 
-override func viewDidAppear(_ animated: Bool) {
-    
-    if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
-        return
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    
-    let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
-    if let walkthroughViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughViewController") as? WalkthroughViewController {
-        present(walkthroughViewController, animated: true, completion: nil)
-    }
-}
 
     // MARK: - Table view data source
 

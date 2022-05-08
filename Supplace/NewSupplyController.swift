@@ -46,12 +46,23 @@ class NewSupplyController: UITableViewController,UIImagePickerControllerDelegate
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
         
+        // Customize the navigation bar
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        if let customFont = UIFont(name: "SpaceGrotesk-VariableFont_wght", size: 38.0) {
+            // For Xcode 9 users, NSAttributedString.Key is equal to NSAttributedStringKey
+            navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0.28, green: 0.41, blue: 0.58, alpha: 1.00), NSAttributedString.Key.font: customFont]
+        }
+        
+        navigationController?.hidesBarsOnSwipe = true
+    
     }
     @IBAction func saveButtonTapped(_ sender: AnyObject) {
         if nameTextField.text == "" || suppliesCatTextField.text == "" || storageTextField.text == "" || dateBoughtTextField.text == "" {
             let alertController = UIAlertController(title: "Oops", message: "Sorry! we can't proceed because not all fields are filled.", preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
             alertController.addAction(alertAction)
             
             present(alertController, animated: true, completion: nil)

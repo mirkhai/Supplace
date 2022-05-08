@@ -8,6 +8,8 @@
 import UIKit
 
 class LogsTableViewCell: UITableViewCell {
+    
+    @IBOutlet var cellBgColor: UIView!
     @IBOutlet weak var supplyNameLabel: UILabel!
     @IBOutlet weak var supplyCatLabel: UILabel!
     @IBOutlet weak var storageCatLabel: UILabel!
@@ -15,7 +17,7 @@ class LogsTableViewCell: UITableViewCell {
     @IBOutlet weak var storedInLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var supplyImageView: UIImageView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,8 +25,7 @@ class LogsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+        // Configure the view for the selected state
 
 }

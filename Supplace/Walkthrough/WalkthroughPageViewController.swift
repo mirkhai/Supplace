@@ -2,8 +2,9 @@
 //  WalkthroughPageViewController.swift
 //  Supplace
 //
-//  Created by Mirta Khairunnisa on 29/04/22.
+//  Created by Mirta Khairunnisa on 04/05/22.
 //
+
 
 import UIKit
 
@@ -17,9 +18,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
-    var pageHeadings = ["Log Your Supplies & Storage", "Place Your Supplies", "Tidier, Happier!"]
-    var pageImages = ["Onboarding 1", "Onboarding 2", "Onboarding 3"]
-    var pageSubHeadings = ["Input your stationary supplies and storage types to let you know the stuffs that you need to organize.", "After you take notes, you can place your supplies according to the chosen storage type.", "You can save time, save you from confusion, and start being productive when you know where are your supplies placed!"]
+    var pageHeadings = ["Log your Supplies & Storage", "Place your Supplies", "Tidier, Happier!"]
+    var pageImages = ["onboarding-1", "onboarding-2", "onboarding-3"]
+    var pageSubHeadings = ["Input your stationary supplies and storage types to let you know the stuffs that you need to organize.", "After you take notes, you can place your supplies according to the chosen storage type.", "You could save time, save you from confusion, and start being productive when you know where are your supplies placed!"]
     
     var currentIndex = 0
 

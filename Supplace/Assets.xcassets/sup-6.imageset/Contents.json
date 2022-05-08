@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Onboarding 2.pdf",
+      "filename" : "ballpoint-pens-mechanical-pencils-various-shapes-colors-their-tip-oriented-inwards-forming-circle-51917463.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,8 +17,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

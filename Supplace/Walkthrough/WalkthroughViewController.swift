@@ -2,7 +2,7 @@
 //  WalkthroughViewController.swift
 //  Supplace
 //
-//  Created by Mirta Khairunnisa on 29/04/22.
+//  Created by Mirta Khairunnisa on 04/05/22.
 //
 
 import UIKit
@@ -15,6 +15,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     
     @IBOutlet var nextButton: UIButton! {
         didSet {
+            nextButton.layer.cornerRadius = 10.0
             nextButton.layer.masksToBounds = true
         }
     }
@@ -29,7 +30,6 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     
     @IBAction func skipButtonTapped(sender: UIButton) {
         UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-        createQuickAction()
         dismiss(animated: true, completion: nil)
     }
     
@@ -41,7 +41,6 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
                 
             case 2:
                 UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
-                createQuickAction()
                 dismiss(animated: true, completion: nil)
                 
             default: break
@@ -59,7 +58,7 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
                 skipButton.isHidden = false
             
             case 2:
-                nextButton.setTitle("Get Started", for: .normal)
+                nextButton.setTitle("Start Now", for: .normal)
                 skipButton.isHidden = true
                 
             default: break
@@ -95,21 +94,5 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     }
  
 
-    // MARK: - 3D Touch methods
-    
-    func createQuickAction() {
-        // Add Quick Actions
-        
-        if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
-            if let bundleIdentifier = Bundle.main.bundleIdentifier {
-                let shortcutItem1 = UIApplicationShortcutItem(type: "\(bundleIdentifier).OpenFavorites", localizedTitle: "Show Favorites", localizedSubtitle: nil, icon: UIApplicationShortcutIcon(templateImageName: "favorite-shortcut"), userInfo: nil)
-                
-                let shortcutItem2 = UIApplicationShortcutItem(type: "\(bundleIdentifier).OpenDiscover", localizedTitle: "Discover cafes", localizedSubtitle: nil, icon: UIApplicationShortcutIcon(templateImageName: "discover-shortcut"), userInfo: nil)
-                
-                let shortcutItem3 = UIApplicationShortcutItem(type: "\(bundleIdentifier).NewCafe", localizedTitle: "New Cafe", localizedSubtitle: nil, icon: UIApplicationShortcutIcon(type: .add), userInfo: nil)
-                
-                UIApplication.shared.shortcutItems = [shortcutItem1, shortcutItem2, shortcutItem3]
-            }
-        }
-    }
 }
+

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD4780CC2828114B00350A87 /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4780CB2828114A00350A87 /* StorageViewController.swift */; };
+		AD4780CE2828148600350A87 /* StorageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4780CD2828148600350A87 /* StorageCollectionViewCell.swift */; };
 		AD704C45281AC2D60017744B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD704C44281AC2D60017744B /* Assets.xcassets */; };
 		AD704C62281AC3610017744B /* NewSupplyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD704C56281AC3610017744B /* NewSupplyController.swift */; };
 		AD704C63281AC3610017744B /* SupplyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD704C57281AC3610017744B /* SupplyCollectionViewCell.swift */; };
@@ -18,16 +20,18 @@
 		AD704C6A281AC3610017744B /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD704C5E281AC3610017744B /* RoundedTextField.swift */; };
 		AD704C6B281AC3610017744B /* Supply.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD704C5F281AC3610017744B /* Supply.swift */; };
 		AD704C6F281AC4B70017744B /* Supplace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD704C6D281AC4B70017744B /* Supplace.xcdatamodeld */; };
-		AD77A670281B3B6C007F1647 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD77A66F281B3B6C007F1647 /* WalkthroughPageViewController.swift */; };
-		AD77A672281B3F05007F1647 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD77A671281B3F05007F1647 /* WalkthroughViewController.swift */; };
 		ADBC8343281AFBEF008BEB21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD704C60281AC3610017744B /* Main.storyboard */; };
 		ADBC8344281AFBF3008BEB21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD704C58281AC3610017744B /* LaunchScreen.storyboard */; };
 		ADBC8346281B099C008BEB21 /* SpaceGrotesk-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADBC8345281B099C008BEB21 /* SpaceGrotesk-VariableFont_wght.ttf */; };
-		ADBC8348281B28ED008BEB21 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBC8347281B28EC008BEB21 /* Onboarding.storyboard */; };
-		ADBC834C281B30E1008BEB21 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBC834B281B30E1008BEB21 /* WalkthroughContentViewController.swift */; };
+		ADEF63782822D551008DE090 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF63772822D551008DE090 /* WalkthroughContentViewController.swift */; };
+		ADEF637A2822D6C9008DE090 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF63792822D6C9008DE090 /* WalkthroughPageViewController.swift */; };
+		ADEF637C2822D908008DE090 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF637B2822D908008DE090 /* WalkthroughViewController.swift */; };
+		ADEF637F2822DBEF008DE090 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADEF63752822CCFF008DE090 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD4780CB2828114A00350A87 /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
+		AD4780CD2828148600350A87 /* StorageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD704C35281AC2D50017744B /* Supplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Supplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD704C44281AC2D60017744B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD704C49281AC2D60017744B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,11 +48,11 @@
 		AD704C5F281AC3610017744B /* Supply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supply.swift; sourceTree = "<group>"; };
 		AD704C60281AC3610017744B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../../../Apple Developer Academy Sessions/Nano Challenge 1/New Supplace/Supplace/Supplace/Main.storyboard"; sourceTree = "<group>"; };
 		AD704C6E281AC4B70017744B /* Supplace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Supplace.xcdatamodel; sourceTree = "<group>"; };
-		AD77A66F281B3B6C007F1647 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
-		AD77A671281B3F05007F1647 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		ADBC8345281B099C008BEB21 /* SpaceGrotesk-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		ADBC8347281B28EC008BEB21 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		ADBC834B281B30E1008BEB21 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		ADEF63752822CCFF008DE090 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		ADEF63772822D551008DE090 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		ADEF63792822D6C9008DE090 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		ADEF637B2822D908008DE090 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,25 +88,35 @@
 				AD704C5B281AC3610017744B /* AppDelegate.swift */,
 				AD704C44281AC2D60017744B /* Assets.xcassets */,
 				AD704C49281AC2D60017744B /* Info.plist */,
+				ADEAF9CE281C122000C1A556 /* Walkthrough */,
 				AD704C58281AC3610017744B /* LaunchScreen.storyboard */,
-				AD704C5D281AC3610017744B /* LogsTableViewCell.swift */,
-				AD704C5C281AC3610017744B /* LogsTableViewController.swift */,
 				AD704C60281AC3610017744B /* Main.storyboard */,
-				ADBC8347281B28EC008BEB21 /* Onboarding.storyboard */,
-				ADBC834B281B30E1008BEB21 /* WalkthroughContentViewController.swift */,
-				AD77A671281B3F05007F1647 /* WalkthroughViewController.swift */,
+				ADEF63752822CCFF008DE090 /* Onboarding.storyboard */,
 				AD704C56281AC3610017744B /* NewSupplyController.swift */,
-				AD77A66F281B3B6C007F1647 /* WalkthroughPageViewController.swift */,
 				AD704C5E281AC3610017744B /* RoundedTextField.swift */,
 				AD704C5A281AC3610017744B /* SceneDelegate.swift */,
 				AD704C5F281AC3610017744B /* Supply.swift */,
 				AD704C57281AC3610017744B /* SupplyCollectionViewCell.swift */,
 				AD704C59281AC3610017744B /* SupplyViewController.swift */,
+				AD4780CD2828148600350A87 /* StorageCollectionViewCell.swift */,
+				AD4780CB2828114A00350A87 /* StorageViewController.swift */,
+				AD704C5D281AC3610017744B /* LogsTableViewCell.swift */,
+				AD704C5C281AC3610017744B /* LogsTableViewController.swift */,
 				AD704C53281AC3600017744B /* Supplace-Bridging-Header.h */,
 				AD704C6D281AC4B70017744B /* Supplace.xcdatamodeld */,
 				ADBC8345281B099C008BEB21 /* SpaceGrotesk-VariableFont_wght.ttf */,
 			);
 			path = Supplace;
+			sourceTree = "<group>";
+		};
+		ADEAF9CE281C122000C1A556 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				ADEF63772822D551008DE090 /* WalkthroughContentViewController.swift */,
+				ADEF63792822D6C9008DE090 /* WalkthroughPageViewController.swift */,
+				ADEF637B2822D908008DE090 /* WalkthroughViewController.swift */,
+			);
+			path = Walkthrough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,11 +178,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADEF637F2822DBEF008DE090 /* Onboarding.storyboard in Resources */,
 				ADBC8346281B099C008BEB21 /* SpaceGrotesk-VariableFont_wght.ttf in Resources */,
 				ADBC8344281AFBF3008BEB21 /* LaunchScreen.storyboard in Resources */,
 				ADBC8343281AFBEF008BEB21 /* Main.storyboard in Resources */,
 				AD704C45281AC2D60017744B /* Assets.xcassets in Resources */,
-				ADBC8348281B28ED008BEB21 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,17 +195,19 @@
 			files = (
 				AD704C65281AC3610017744B /* SupplyViewController.swift in Sources */,
 				AD704C62281AC3610017744B /* NewSupplyController.swift in Sources */,
-				ADBC834C281B30E1008BEB21 /* WalkthroughContentViewController.swift in Sources */,
 				AD704C6B281AC3610017744B /* Supply.swift in Sources */,
 				AD704C63281AC3610017744B /* SupplyCollectionViewCell.swift in Sources */,
-				AD77A672281B3F05007F1647 /* WalkthroughViewController.swift in Sources */,
 				AD704C6F281AC4B70017744B /* Supplace.xcdatamodeld in Sources */,
-				AD77A670281B3B6C007F1647 /* WalkthroughPageViewController.swift in Sources */,
+				ADEF637C2822D908008DE090 /* WalkthroughViewController.swift in Sources */,
+				ADEF63782822D551008DE090 /* WalkthroughContentViewController.swift in Sources */,
+				ADEF637A2822D6C9008DE090 /* WalkthroughPageViewController.swift in Sources */,
 				AD704C6A281AC3610017744B /* RoundedTextField.swift in Sources */,
 				AD704C68281AC3610017744B /* LogsTableViewController.swift in Sources */,
+				AD4780CC2828114B00350A87 /* StorageViewController.swift in Sources */,
 				AD704C67281AC3610017744B /* AppDelegate.swift in Sources */,
 				AD704C69281AC3610017744B /* LogsTableViewCell.swift in Sources */,
 				AD704C66281AC3610017744B /* SceneDelegate.swift in Sources */,
+				AD4780CE2828148600350A87 /* StorageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
